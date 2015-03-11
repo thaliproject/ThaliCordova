@@ -16,6 +16,7 @@
  specific language governing permissions and limitations
  under the License.
  */
+
 //
 //  main.m
 //  ThaliCordova
@@ -28,8 +29,8 @@
 
 int main(int argc, char* argv[])
 {
-    @autoreleasepool {
-        int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");
-        return retVal;
+    @autoreleasepool
+    {
+        return UIApplicationMain(argc, argv, nil, @"AppDelegate");
     }
 }

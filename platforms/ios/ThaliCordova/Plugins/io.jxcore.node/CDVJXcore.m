@@ -19,8 +19,8 @@ void fputs$UNIX2003(const char *restrict c, FILE *restrict f) { fputs(c, f); }
 
 static CDVJXcore *activeDevice = nil;
 
-void ConvertResult(JXResult *result, CDVPluginResult **to_result,
-                   bool is_error) {
+void ConvertResult(JXResult * result, CDVPluginResult ** to_result, bool is_error)
+{
   CDVPluginResult *ret_val;
 
   CDVCommandStatus status = CDVCommandStatus_OK;
@@ -119,6 +119,15 @@ void callback(JXResult *results, int argc) {
 
 @implementation CDVJXcore
 
+void brianSampleMethod(JXResult * results, int argc)
+{
+    NSLog(@"&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+    NSLog(@"&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+    NSLog(@"This is Brian Sample Method!!!!! '%@'", [[NSThread currentThread] isMainThread] ? @"Main" : @"Not main");
+    NSLog(@"&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+    NSLog(@"&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+}
+
 - (void)pluginInitialize
 {
     NSLog(@"****JXcore Cordova plugin init.");
@@ -142,7 +151,11 @@ void callback(JXResult *results, int argc) {
     }
 
     JX_Initialize([sandboxPath UTF8String], callback);
+    
+    
+    
     JX_DefineMainFile([fileContents UTF8String]);
+    JX_DefineExtension("brianSampleMethod", brianSampleMethod);
     JX_StartEngine();
     [self jxcoreLoop:[NSNumber numberWithInt:0]];
 

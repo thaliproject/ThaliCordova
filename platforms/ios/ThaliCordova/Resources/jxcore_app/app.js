@@ -41,6 +41,8 @@ var jsnice = require('json-nice');
 var obj = { a:1, b:2 };
 console.log(jsnice(obj));
 
+process.natives.brianSampleMethod();
+
 // execpath
 console.log("The exec execPath", process.execPath);
 
