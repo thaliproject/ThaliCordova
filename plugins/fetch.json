@@ -1,0 +1,8 @@
+{
+    "io.jxcore.node": {
+        "source": {
+            "type": "local",
+            "path": "jxcore-cordova/io.jxcore.node"
+        }
+    }
+}
