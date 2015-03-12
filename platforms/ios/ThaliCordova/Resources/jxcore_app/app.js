@@ -5,6 +5,10 @@ var foo = cordova('log');
 foo.call("JXcore is up and running!!!!");
 foo.call("!!!!!!!!!!!!!!!!!!!");
 
+cordova('brianSampleMethod').registerSync(function() {
+                              process.natives.brianSampleMethod();
+                              });
+
 cordova('brian').registerSync(function() {
                               console.log("Hello!!!");
                               
