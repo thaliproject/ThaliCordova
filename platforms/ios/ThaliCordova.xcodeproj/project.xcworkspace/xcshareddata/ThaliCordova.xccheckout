@@ -10,14 +10,14 @@
 	<string>ThaliCordova</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AC5C83A223FE2350075D33CAB8E3C83AA21A812E</key>
+		<key>F16BB00642BA5D42C8BE514453223E9A134F46EC</key>
 		<string>github.com:thaliproject/ThaliCordova.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>platforms/ios/ThaliCordova.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AC5C83A223FE2350075D33CAB8E3C83AA21A812E</key>
+		<key>F16BB00642BA5D42C8BE514453223E9A134F46EC</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AC5C83A223FE2350075D33CAB8E3C83AA21A812E</string>
+	<string>F16BB00642BA5D42C8BE514453223E9A134F46EC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AC5C83A223FE2350075D33CAB8E3C83AA21A812E</string>
+			<string>F16BB00642BA5D42C8BE514453223E9A134F46EC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ThaliCordova</string>
 		</dict>
